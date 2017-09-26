@@ -15,7 +15,7 @@ class AdafruitPWMServo(Block):
 
     def process_signals(self, signals):
         for signal in signals:
-            self.pwm.set_pwm(0, 0, servo_min)
+            self.pwm.set_pwm(0, 0, self.servo_min)
             time.sleep(1)
-            self.pwm.set_pwm(0, 0, servo_max)
+            self.pwm.set_pwm(0, 0, self.servo_max)
             time.sleep(1)
