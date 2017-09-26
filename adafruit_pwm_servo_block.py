@@ -6,7 +6,7 @@ import Adafruit_PCA9685
 class AdafruitPWMServo(Block):
 
     pulse_length = IntProperty(title="Pulse Length", default=0)
-    frequency = IntPropety(title="Frequency", default=60)
+    frequency = IntProperty(title="Frequency", default=60)
     servo_channel = IntProperty(title="Servo Channel", defalut=0)
 
     def __init__(self):
