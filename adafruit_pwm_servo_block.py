@@ -12,7 +12,6 @@ class AdafruitPWMServo(Block):
     def __init__(self):
             super().__init__()
             self.pwm = Adafruit_PCA9685.PCA9685()
-            self.pulse_length = None
 
     def start(self):
             self.pwm.set_pwm_freq(self.frequency())
