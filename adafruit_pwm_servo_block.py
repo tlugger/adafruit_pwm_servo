@@ -4,7 +4,7 @@ from nio.properties import VersionProperty
 import time
 import Adafruit_PCA9685
 
-class AdafruitPWMServo(Block)
+class AdafruitPWMServo(Block):
 
     def __init__(self):
             super().__init__()
