@@ -1,40 +1,40 @@
 {
-  "namespace/BlockName": {
-    "version": "1.0.0",
-    "description": "Description of the block.",
+  "nio/AdafruitPWMServo": {
+    "version": "0.1.0",
+    "description": "Control a servo motor through the Adafruit PWM Servo hat.",
+    "categories": [
+      "hardware"
+    ],
     "properties": {
-      "<property1>": {
-        "description": "Required description of the property"
+      "frequency": {
+        "title": "Frequency",
+        "type": "IntType",
+        "description": "Motor frequency",
+        "default": 60
       },
-      "<property2>": {
-        "default": "Optional metadata with any key.",
-        "description": "Required description of the property"
+      "pulse_length": {
+        "title": "Pulse Length",
+        "type": "IntType",
+        "description": "Length to rotate the motor",
+        "default": 0
+      },
+      "servo_channel": {
+        "title": "Servo Channel",
+        "type": "IntType",
+        "description": "Channel on the hat to control the motor through",
+        "default": null
       }
     },
     "inputs": {
-      "<input1 | default>": {
-        "description": "Required description of the input",
-      },
-      "<input2>": {
-        "description": "Required description of the input"
+      "default": {
+        "description": ""
       }
     },
     "outputs": {
-      "<output1 | default>": {
-        "description": "Required description of the output",
-      },
-      "<output2>": {
-        "description": "Required description of the output"
+      "default": {
+        "description": ""
       }
     },
-    "commands": {
-      "<command1>": {
-        "description": "Required description of the command",
-        "type": "Optional type and other metadata with any key."
-      },
-      "<command2>": {
-        "description": "Required description of the command"
-      }
-    }
+    "commands": {}
   }
 }
